@@ -25,7 +25,7 @@ An end-to-end data analytics project focused on exploring Brazilian e-commerce m
 ## 🧹 Data Cleaning & Preprocessing Highlights
 
 * **Geospatial Aggregation:** Handled **261,831 duplicate coordinates** in the geolocation table. Used aggregation techniques (`groupby().mean()`) to establish one unique center point per zip code prefix, ensuring clean downstream data merging without data explosion.
-* **Translation Look-up Gap:** Discovered an integrity gap where the product catalog contained **74 unique categories**, but the English translation dictionary only contained **71**. Isolated the 3 missing Portuguese categories to prevent data loss (`NaN` generation) during the English mapping process.
+
 
 ---
 
